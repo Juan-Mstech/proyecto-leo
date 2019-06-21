@@ -16,7 +16,8 @@ import { TablaComponent } from './components/tabla/tabla.component';
     MenuComponent,
     SettingsComponent,
     FooterComponent,
-    TablaComponent,
+    TablaComponent
+   
   ],
   imports: [
     BrowserModule,
