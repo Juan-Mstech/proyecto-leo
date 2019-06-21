@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TablaComponent } from './components/tabla/tabla.component';
+import { PresentacionPctosComponent } from './components/presentacion-pctos/presentacion-pctos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TablaComponent } from './components/tabla/tabla.component';
     MenuComponent,
     SettingsComponent,
     FooterComponent,
-    TablaComponent
+    TablaComponent,
+    PresentacionPctosComponent
    
   ],
   imports: [

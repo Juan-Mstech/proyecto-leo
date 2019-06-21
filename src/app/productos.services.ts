@@ -5,39 +5,40 @@ import { Injectable } from '@angular/core';
 export class ProductosServices {
     getProductos(): string[] {
         return [
-            'procesadores',
-            'teclado',
-            'mouse',
-            'monitor',
-            'impresora',
-            'disco rigido',
-            'placa de video',
-            'funete de alimentacion',
-            'estabilizador de tension',
-            'webcam'];
+            'Procesadores',
+            'Teclados',
+            'Mouses',
+            'Monitores',
+            'Parlantes',
+            'Impresoras',
+            'Discos rigidos',
+            'Placas de video',
+            'Funetes de alimentacion',
+            'Webcam'];
     }
 
     getMarcas(): string[] {
         return [
-            'intel',
-            'amd',
-            'genius',
-            'logitech',
-            'samsung',
-            'lg',
-            'hp',
-            'brother',
-            'epson',
-            'toshiba',
-            'western digital',
-            'hitachi',
-            'nvidia',
-            'radeon',
-            'antec',
-            'corsair',
-            'thermaltake',
-            'creative',
-            'papalook'
+            'Intel',
+            'Amd',
+            'Genius',
+            'Sound Blaster',
+            'Logitech',
+            'Samsung',
+            'Lg',
+            'HP',
+            'Brother',
+            'Epson',
+            'Toshiba',
+            'Western Digital',
+            'Hitachi',
+            'Nvidia',
+            'Radeon',
+            'Antec',
+            'Corsair',
+            'Thermaltake',
+            'Creative',
+            'Papalook'
         ]
     }
 }
