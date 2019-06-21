@@ -1,8 +1,16 @@
 <div class="content">
-  <div class="lista" *ngFor="let item of listaProductos">
 
-  <a href="#">
-      {{item}}
-    </a>
-</div>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button *ngFor="let item of listaProductos" class="btn btn-link" type="button" data-toggle="collapse"
+            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            {{item}}
+          </button>
+        </h5>
+      </div>
+    </div>
+  </div>
+
 </div>

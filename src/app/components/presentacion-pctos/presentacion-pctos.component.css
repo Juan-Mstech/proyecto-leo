@@ -1,9 +1,6 @@
-.lista{
-    background:#ddd;
-     padding:1em 3em;
-     margin: 1em 4em;
+.card-header{
+    background: #aaa;
 }
-a{
-    text-decoration: none;
-    color:darkcyan
+.btn-link{
+    color:darkslategray;
 }
