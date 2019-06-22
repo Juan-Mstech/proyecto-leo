@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductosServices} from '../../productos.services';
+import {Products} from '../../model/products';
 
 @Component({
   selector: 'app-presentacion-pctos',
@@ -8,11 +9,9 @@ import {ProductosServices} from '../../productos.services';
   providers: [ProductosServices]
 })
 export class PresentacionPctosComponent implements OnInit {
-  listaProductos: string[];
-  listaMarcas: string[];
+  listaProducto: Array<Products>;
   constructor(servicio:ProductosServices) {
-    this.listaProductos=servicio.getProductos();
-    this.listaMarcas=servicio.getMarcas();
+    this.listaProducto=servicio.getProductos();
    }
 
   ngOnInit() {
