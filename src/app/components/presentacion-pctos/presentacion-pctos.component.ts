@@ -8,6 +8,7 @@ import { Products } from '../../model/products';
   styleUrls: ['./presentacion-pctos.component.css'],
   providers: [ProductosServices]
 })
+
 export class PresentacionPctosComponent implements OnInit {
   listaProducto: Array<Products>;
   constructor(servicio: ProductosServices) {

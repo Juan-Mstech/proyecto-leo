@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductosServices} from '../../productos.services';
+import { ProductosServices } from '../../productos.services';
 
 @Component({
   selector: 'app-menu',
@@ -11,10 +11,10 @@ export class MenuComponent implements OnInit {
 
   listaTipoProductos: string[];
   listaMarcas: string[];
-  constructor(servicio:ProductosServices) {
-    this.listaTipoProductos=servicio.getTipoProductos();
-    this.listaMarcas=servicio.getMarcas();
-   }
+  constructor(servicio: ProductosServices) {
+    this.listaTipoProductos = servicio.getTipoProductos();
+    this.listaMarcas = servicio.getMarcas();
+  }
 
   ngOnInit() {
   }
