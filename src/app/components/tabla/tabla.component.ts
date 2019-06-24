@@ -13,15 +13,16 @@ export class TablaComponent implements OnInit {
   cols: any[];
   listaTipoProductos: string[];
   listaMarcas: string[];
+  
 
 
   constructor(private productosServices: ProductosServices) {
     this.listaTipoProductos = productosServices.getTipoProductos();
     this.listaMarcas = productosServices.getMarcas();
+    this.products = productosServices.getProductos();
   }
 
   ngOnInit() {
-    this.productosServices.getProductos();
 
     this.cols = [
       { field: 'productType', header: 'Tipo de producto' },
