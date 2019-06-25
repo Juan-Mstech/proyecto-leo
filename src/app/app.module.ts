@@ -8,6 +8,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TablaComponent } from '../app/components/tabla/tabla.component';
+import {DropdownModule} from 'primeng/dropdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { TablaComponent } from '../app/components/tabla/tabla.component';
   imports: [
     BrowserModule,
     TableModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DropdownModule
   ],
 
   providers: [],

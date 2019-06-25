@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Products } from './model/products';
 
-@Injectable()
+@Injectable(
+    {providedIn:'root'}
+)
 
 export class ProductosServices {
     getTipoProductos(): string[] {
