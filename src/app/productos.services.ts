@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Products } from './model/products';
-import {SelectItem} from 'primeng/api';
+import { SelectItem } from 'primeng/api';
 
 
 @Injectable(
@@ -9,48 +9,46 @@ import {SelectItem} from 'primeng/api';
 
 export class ProductosServices {
 
-    
+
     getTipoProductos(): SelectItem[] {
         return [
-            {
-                title:'Procesadores',
-              value:10
-            }
-            
-            // 'Teclados',
-            // 'Mouses',
-            // 'Monitores',
-            // 'Parlantes',
-            // 'Impresoras',
-            // 'Discos rigidos',
-            // 'Placas de video',
-            // 'Funetes de alimentacion',
-            // 'Webcam'
+            { label: '-Seleccione-', value: 0 },
+            { label: 'Procesadores', value: 10 },
+            { label: 'Teclado', value: 20 },
+            { label: 'Mouses', value: 30 },
+            { label: 'Monitores', value: 40 },
+            { label: 'Parlantes', value: 50 },
+            { label: 'Impresoras', value: 60 },
+            { label: 'Discos rígidos', value: 70 },
+            { label: 'Placas de video', value: 80 },
+            { label: 'Fuentes de alimentación', value: 90 },
+            { label: 'Webcam', value: 100 }
         ];
     }
 
-    getMarcas(): string[] {
+    getMarcas(): SelectItem[] {
         return [
-            'Intel',
-            'Amd',
-            'Genius',
-            'Sound Blaster',
-            'Logitech',
-            'Samsung',
-            'Lg',
-            'HP',
-            'Brother',
-            'Epson',
-            'Toshiba',
-            'Western Digital',
-            'Hitachi',
-            'Nvidia',
-            'Radeon',
-            'Antec',
-            'Corsair',
-            'Thermaltake',
-            'Creative',
-            'Papalook'
+            { label: '-Seleccione-', value: 200 },
+            { label: 'Intel', value: 210 },
+            { label: 'Amd', value: 220 },
+            { label: 'Genius', value: 230 },
+            { label: 'Sound Blaster', value: 240 },
+            { label: 'Logitech', value: 250 },
+            { label: 'Samsung', value: 260 },
+            { label: 'Lg', value: 270 },
+            { label: 'HP', value: 280 },
+            { label: 'Brother', value: 290 },
+            { label: 'Epson', value: 300 },
+            { label: 'Toshiba', value: 310 },
+            { label: 'Western Digital', value: 320 },
+            { label: 'Hitachi', value: 330 },
+            { label: 'Nvidia', value: 340 },
+            { label: 'Radeon', value: 350 },
+            { label: 'Antec', value: 360 },
+            { label: 'Corsair', value: 370 },
+            { label: 'Thermaltake', value: 380 },
+            { label: 'Creative', value: 390 },
+            { label: 'Papalook', value: 400 }
         ];
     }
 
