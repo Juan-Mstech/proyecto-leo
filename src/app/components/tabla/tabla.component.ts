@@ -11,11 +11,9 @@ export class TablaComponent implements OnInit {
 
   products: Products[];
   cols: any[];
-  listaTipoProductos: string[];
+  listaTipoProductos;
   listaMarcas: string[];
   
-
-
   constructor(private productosServices: ProductosServices) {
     this.listaTipoProductos = productosServices.getTipoProductos();
     this.listaMarcas = productosServices.getMarcas();
@@ -31,14 +29,4 @@ export class TablaComponent implements OnInit {
       { field: 'detail', header: 'Detalle' }
     ];
   }
-  /*
-    onYearChange(event, dt) {
-        if (this.yearTimeout) {
-            clearTimeout(this.yearTimeout);
-        }
-  
-        this.yearTimeout = setTimeout(() => {
-            dt.filter(event.value, 'year', 'gt');
-        }, 250);
-    }*/
 }

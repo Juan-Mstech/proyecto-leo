@@ -8,8 +8,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TablaComponent } from '../app/components/tabla/tabla.component';
-import {DropdownModule} from 'primeng/dropdown';
-
+import { DropdownModule } from 'primeng/dropdown';
+import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +22,7 @@ import {DropdownModule} from 'primeng/dropdown';
 
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     TableModule,
     AppRoutingModule,
     DropdownModule
