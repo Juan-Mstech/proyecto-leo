@@ -16,13 +16,16 @@
             <th *ngFor="let col of columns" [ngSwitch]="col.field">
 
                 <p-dropdown *ngSwitchCase="'productType'" [options]="listaTipoProductos" [style]="{'width':'100%'}"
-                    (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown>
+                    (onChange)="dt.filter($event.value, col.field, 'equals')">
+                </p-dropdown>
+
                 <p-dropdown *ngSwitchCase="'brand'" [options]="listaMarcas" [style]="{'width':'100%'}"
-                    (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown>
+                    (onChange)="dt.filter($event.value, col.field, 'equals')">
+                </p-dropdown>
 
                 <input *ngSwitchCase="'price'" pInputText type="text"
                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
-
+                    
                 <input *ngSwitchCase="'detail'" pInputText type="text"
                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
 
