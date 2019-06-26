@@ -182,6 +182,34 @@ export class ProductosServices {
                 productType: 60
             },
 
+
+            {
+                id: 57,
+                brand: 280,
+                detail: "Ecotank/Wi-Fi",
+                price: "15620.00",
+                model: "K34510",
+                productType: 60
+            },
+
+            {
+                id: 58,
+                brand: 280,
+                detail: "Ecotank",
+                price: "29020.00",
+                model: "JP3110",
+                productType: 60
+            },
+
+            {
+                id: 59,
+                brand: 280,
+                detail: "Ecotank",
+                price: "95020.00",
+                model: "XYZ110",
+                productType: 60
+            },
+
             {
                 id: 52,
                 brand: 300,
