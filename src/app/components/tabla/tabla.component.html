@@ -1,5 +1,9 @@
 <p-table #dt [columns]="cols" [value]="products" [paginator]="true" [rows]="10">
     <ng-template pTemplate="caption">
+        <div style="text-align: left">
+                <button class="reset col-md-2" type="reset">Limpiar</button>
+                <button class="detalle col-md-2" type="submit">Detalles</button>    
+        </div>
         <div style="text-align: right">
             <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
             <input type="text" pInputText size="50" placeholder="Global Filter"
@@ -25,9 +29,9 @@
 
                 <input *ngSwitchCase="'price'" pInputText type="text"
                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
-                    
-                
-                    <input *ngSwitchCase="'detail'" pInputText type="text"
+
+
+                <input *ngSwitchCase="'model'" pInputText type="text"
                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
 
             </th>

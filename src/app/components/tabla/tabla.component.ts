@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Products } from 'src/app/model/products';
 import { ProductosServices } from 'src/app/productos.services';
+import { SelectItem } from 'primeng/api';
 
 @Component({
   selector: 'app-tabla',
@@ -11,8 +12,8 @@ export class TablaComponent implements OnInit {
 
   products: Products[];
   cols: any[];
-  listaTipoProductos;
-  listaMarcas: string[];
+  listaTipoProductos: SelectItem[] ;
+  listaMarcas: SelectItem[];
   
   constructor(private productosServices: ProductosServices) {
     this.listaTipoProductos = productosServices.getTipoProductos();
@@ -25,8 +26,9 @@ export class TablaComponent implements OnInit {
     this.cols = [
       { field: 'productType', header: 'Tipo de producto' },
       { field: 'brand', header: 'Marca' },
-      { field: 'price', header: 'Precio' },
-      { field: 'detail', header: 'Detalle' }
+      { field: 'model', header: 'Modelo' },
+      { field: 'price', header: 'Precio' }
+      
     ];
   }
 }

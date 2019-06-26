@@ -1,8 +1,9 @@
 export interface Products {
     id: number;
-    productType: string;
-    brand: string;
+    productType: number;
+    brand: number;
     price: string;
     detail: string;
     model: string;
+    
 }
