@@ -19,6 +19,7 @@ export class TablaComponent implements OnInit {
     this.listaTipoProductos = productosServices.getTipoProductos();
     this.listaMarcas = productosServices.getMarcas();
     this.products = productosServices.getProductos();
+   
   }
 
   ngOnInit() {
@@ -30,5 +31,7 @@ export class TablaComponent implements OnInit {
       { field: 'price', header: 'Precio' }
       
     ];
+
+    
   }
 }

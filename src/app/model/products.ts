@@ -5,5 +5,6 @@ export interface Products {
     price: string;
     detail: string;
     model: string;
-    
+    pcto:string;
+    marca:string;    
 }

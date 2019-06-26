@@ -9,7 +9,9 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TablaComponent } from '../app/components/tabla/tabla.component';
 import { DropdownModule } from 'primeng/dropdown';
-import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     TableModule,
     AppRoutingModule,
-    DropdownModule
+    DropdownModule,
+    ButtonModule
   ],
 
   providers: [],
