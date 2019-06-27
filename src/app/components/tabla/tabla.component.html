@@ -13,15 +13,12 @@
             <th *ngFor="let col of columns">
                 {{col.header}}
             </th>
-            <th rowspan="2">
-                <button pButton type="reset" label="Limpiar" class="ui-button-rounded ui-button-success"></button>
-            </th>
         </tr>
         <tr>
             <th *ngFor="let col of columns" [ngSwitch]="col.field">
 
-                <p-dropdown *ngSwitchCase="'productType'" [options]="listaTipoProductos" [style]="{'width':'100%'}"
-                    (onChange)="dt.filter($event.value, col.field, 'equals')">
+                <p-dropdown id="filtroTypoPcto" *ngSwitchCase="'productType'" [options]="listaTipoProductos"
+                    [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')">
                 </p-dropdown>
 
                 <p-dropdown *ngSwitchCase="'brand'" [options]="listaMarcas" [style]="{'width':'100%'}"
@@ -37,7 +34,6 @@
             </th>
         </tr>
     </ng-template>
-
 
     <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr [pSelectableRow]="rowData">

@@ -1,10 +1,8 @@
 export interface Products {
     id: number;
-    productType: number;
-    brand: number;
+    productType: string;
+    brand: string;
     price: string;
     detail: string;
-    model: string;
-    pcto:string;
-    marca:string;    
+    model: string;   
 }
