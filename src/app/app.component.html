@@ -1,21 +1,15 @@
 <app-header></app-header>
+
 <app-menu></app-menu>
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-
-    </section>
 
     <!-- Main content -->
     <section class="content">
-        <app-tabla>
-            
-<app-detalles></app-detalles>
-        </app-tabla>
+        <router-outlet></router-outlet>
     </section>
+
 </div>
 
-<router-outlet></router-outlet>
-<app-settings></app-settings>
 <app-footer></app-footer>

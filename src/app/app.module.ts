@@ -14,7 +14,6 @@ import { ButtonModule } from 'primeng/button';
 import { DetallesComponent } from 'src/app/components/detalles/detalles.component';
 import { RouteModule } from 'src/app/components/route/route.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
