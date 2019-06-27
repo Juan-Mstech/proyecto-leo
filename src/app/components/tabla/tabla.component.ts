@@ -12,9 +12,9 @@ export class TablaComponent implements OnInit {
 
   products: Products[];
   cols: any[];
-  listaTipoProductos: SelectItem[] ;
+  listaTipoProductos: SelectItem[];
   listaMarcas: SelectItem[];
-  
+
   constructor(private productosServices: ProductosServices) {
     this.listaTipoProductos = productosServices.getTipoProductos();
     this.listaMarcas = productosServices.getMarcas();
@@ -27,12 +27,8 @@ export class TablaComponent implements OnInit {
       { field: 'productType', header: 'Tipo de producto' },
       { field: 'brand', header: 'Marca' },
       { field: 'model', header: 'Modelo' },
-      { field: 'price', header: 'Precio'  }
-      
-    ];   
-  }
+      { field: 'price', header: 'Precio' }
 
-  limpiar(){
-    
+    ];
   }
 }

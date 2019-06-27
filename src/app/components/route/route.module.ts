@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from 'src/app/app.component';
+import { TablaComponent } from 'src/app/components/tabla/tabla.component';
+import { DetallesComponent } from 'src/app/components/detalles/detalles.component';
+
+
+const routes: Routes = [
+  { path: 'home', component: AppComponent },
+  { path: 'tabla', component: TablaComponent },
+  { path: 'detalles', component: DetallesComponent }
+];
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+
+  exports: [RouterModule]
+})
+export class RouteModule { }

@@ -12,6 +12,8 @@ import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { DetallesComponent } from 'src/app/components/detalles/detalles.component';
+import { RouteModule } from 'src/app/components/route/route.module';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { DetallesComponent } from 'src/app/components/detalles/detalles.componen
     TableModule,
     AppRoutingModule,
     DropdownModule,
-    ButtonModule
+    ButtonModule,
+    RouteModule
   ],
 
   providers: [],
