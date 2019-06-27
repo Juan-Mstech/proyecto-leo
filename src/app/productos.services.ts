@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Products } from './model/products';
 import { SelectItem } from 'primeng/api';
-import { Interpolation } from '@angular/compiler';
 
 
 @Injectable(
@@ -56,14 +55,6 @@ export class ProductosServices {
 
     getProductos(): Products[] {
         return [
-            {
-                id: 10,
-                brand: "Intel",
-                detail: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quos provident. Voluptatem magni eveniet eius fuga aperiam eos fugiat laudantium quaerat rerum delectus, maxime autem pariatur voluptatum! Illum, eos ipsa!",
-                price: "25599.99",
-                model: "i7 Core I7 8700 4.6ghz Coffee Lake Cpu",
-                productType: "Procesadores"
-            },
 
             {
                 id: 1,
@@ -138,6 +129,15 @@ export class ProductosServices {
             },
 
             {
+                id: 10,
+                brand: "Intel",
+                detail: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, quos provident. Voluptatem magni eveniet eius fuga aperiam eos fugiat laudantium quaerat rerum delectus, maxime autem pariatur voluptatum! Illum, eos ipsa!",
+                price: "25599.99",
+                model: "i7 Core I7 8700 4.6ghz Coffee Lake Cpu",
+                productType: "Procesadores"
+            },
+
+            {
                 id: 11,
                 brand: "Intel",
                 detail: "Quad core/3.60Ghz/Smart cache 6Mb/HD Intel 630",
@@ -183,6 +183,25 @@ export class ProductosServices {
             },
 
             {
+                id: 52,
+                brand: "Epson",
+                detail: "Ecotank/Wi-Fi",
+                price: "13225.00",
+                model: "L3150",
+                productType: "Impresoras"
+            },
+
+            {
+                id: 53,
+                brand: "HP",
+                detail: "Ink Tank/Wi-Fi Insumos:GT51/52/53/54",
+                price: "10120.00",
+                model: "HP 410",
+                productType: "Impresoras",
+
+            },
+
+            {
                 id: 57,
                 brand: "HP",
                 detail: "Ecotank/Wi-Fi",
@@ -210,26 +229,6 @@ export class ProductosServices {
             },
 
             {
-                id: 52,
-                brand: "Epson",
-                detail: "Ecotank/Wi-Fi",
-                price: "13225.00",
-                model: "L3150",
-                productType: "Impresoras"
-            },
-
-            {
-                id: 53,
-                brand: "Intel",
-                detail: "Ink Tank/Wi-Fi Insumos:GT51/52/53/54",
-                price: "10120.00",
-                model: "HP 410",
-                productType: "Procesadores",
-
-            },
-
-
-            {
                 id: 60,
                 brand: "Sound Blaster",
                 detail: "Muy buen  parlante",
@@ -240,11 +239,11 @@ export class ProductosServices {
 
             {
                 id: 54,
-                brand: "Intel",
+                brand: "HP",
                 detail: "Ink Tank/Wi-FI/Insumos:GT51/52/5354",
                 price: "10445.00",
                 model: "HP 415",
-                productType: "Procesadores"
+                productType: "Impresoras"
             },
 
             {
@@ -253,7 +252,7 @@ export class ProductosServices {
                 detail: "SL-M2885FW/Wi-Fi/Full duplex Insumo:Mlt-d116s",
                 price: "16210.00",
                 model: "multif Samsung",
-                productType: "Impresorass"
+                productType: "Impresoras"
             },
 
             {

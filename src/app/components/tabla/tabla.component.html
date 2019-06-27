@@ -41,7 +41,9 @@
                 {{rowData[col.field]}}
             </td>
             <td class="td-btn">
-                <button pButton type="submit" label="Detalles" class="ui-button-rounded ui-button-info"></button>
+                <a [routerLink]="[detalles]">
+                    <button pButton type="submit" label="Detalles" class="ui-button-rounded ui-button-info"></button>
+                </a>
             </td>
         </tr>
     </ng-template>

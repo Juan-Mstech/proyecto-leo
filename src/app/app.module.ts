@@ -11,6 +11,7 @@ import { TablaComponent } from '../app/components/tabla/tabla.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
+import { DetallesComponent } from 'src/app/components/detalles/detalles.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ButtonModule } from 'primeng/button';
     MenuComponent,
     SettingsComponent,
     FooterComponent,
-    TablaComponent
+    TablaComponent,
+    DetallesComponent
   ],
 
   imports: [
