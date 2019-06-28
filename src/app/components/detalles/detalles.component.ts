@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalles.component.css']
 })
 export class DetallesComponent implements OnInit {
-
-  constructor() { }
+  name:string;
+  constructor() {
+    this.name="World";
+   }
 
   ngOnInit() {
   }

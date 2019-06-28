@@ -10,14 +10,8 @@ const routes: Routes = [
   { path: 'home', component: AppComponent },
   { path: 'tabla', component: TablaComponent },
   { path: 'detalles', component: DetallesComponent },
-  {
-    path: '',
-    redirectTo: '/tabla',
-    pathMatch: 'full'
-  },
-  {
-    path: '**', redirectTo: '/tabla'
-  }
+  { path: '', redirectTo: '/tabla', pathMatch: 'full' },
+  { path: '**', redirectTo: '/tabla' }
 ];
 
 @NgModule({
