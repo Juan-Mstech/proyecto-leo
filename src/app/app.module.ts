@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { DetallesComponent } from 'src/app/components/detalles/detalles.component';
 import { RouteModule } from 'src/app/components/route/route.module';
+import {AddpctoComponent} from 'src/app/components/addpcto/addpcto.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RouteModule } from 'src/app/components/route/route.module';
     SettingsComponent,
     FooterComponent,
     TablaComponent,
-    DetallesComponent
+    DetallesComponent,
+    AddpctoComponent
   ],
 
   imports: [

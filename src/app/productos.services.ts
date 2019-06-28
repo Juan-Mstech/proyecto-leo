@@ -533,7 +533,7 @@ export class ProductosServices {
                 productType: "Discos rígidos"
             },
 
-             {
+            {
                 id: 73,
                 brand: "Western Digital",
                 detail: "Disco externo 2 TB",
@@ -694,7 +694,7 @@ export class ProductosServices {
                 model: "Papalook-Paparulo-4",
                 productType: "Webcam"
             }
-            
+
         ]
     }
 }
