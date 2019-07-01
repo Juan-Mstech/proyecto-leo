@@ -1,6 +1,11 @@
-.btn{margin:4em 0;}
+.btn{margin:4em 3em;}
 
 .col-md-10{ text-align: right;}
 
-.detalles{min-height: 524px;}
+.detalles{
+    text-align: justify;
+    margin:2em;
+    min-height: 524px;
+    padding: 2em;
+}
 
